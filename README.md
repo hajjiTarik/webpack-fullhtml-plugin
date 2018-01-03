@@ -4,6 +4,7 @@ tiny plugin, allow you to generate html file
 
 Usage :
     
+    ```js
     import HtmlPlugin from 'webpack-fullhtml-plugin';
     
     new HtmlPlugin({
@@ -12,10 +13,12 @@ Usage :
       className: `example-scene`,
       js:  ['./commons.js', './bundle.js'],
       filename: `./path/index.html`
-    });
+    }); 
+    ```
     
 Output :
 
+    ```html
     <!DOCTYPE html>
     <html>
         <head>
@@ -30,6 +33,7 @@ Output :
             <script type="text/javascript" src="./bundle.js"></script>
         </body>
     </html>
+    ```
     
 ### Licence
 MIT
