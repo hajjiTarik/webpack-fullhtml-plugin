@@ -3,7 +3,9 @@
 tiny plugin, allow you to generate html file
 
 Usage :
-
+    
+    import HtmlPlugin from 'webpack-fullhtml-plugin';
+    
     new HtmlPlugin({
       title: `example page`,
       css: ['./reset.css', './style.css'],
