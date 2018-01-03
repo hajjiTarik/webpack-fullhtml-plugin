@@ -1,6 +1,6 @@
 {
   "name": "webpack-fullhtml-plugin",
-  "version": "0.0.1",
+  "version": "0.0.10",
   "description": "webpack plugin to generate html",
   "main": "index.js",
   "scripts": {
