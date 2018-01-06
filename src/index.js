@@ -1,7 +1,7 @@
 "use strict";
 import path from 'path';
 
-class FullHTMLPlugin {
+export default class {
   constructor(options) {
     if (arguments.length > 1) {
       throw new Error(`Please check you options and be sure to pass the correct params`);
@@ -13,7 +13,6 @@ class FullHTMLPlugin {
   jsHandler = (js) => {
     const _js = js instanceof Array ? js : [js];
     let tmp = "";
-    console.log(_js.length);
     if (_js.length === 0) return html;
     for (let i = 0; i < _js.length; i++) {
       tmp += '<script type="text/javascript" src="' + _js[i] + '"></script>\n';
@@ -74,9 +73,6 @@ class FullHTMLPlugin {
       };
 
       callback();
-
     });
   }
 }
-
-module.exports = FullHTMLPlugin;
