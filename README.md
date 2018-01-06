@@ -5,12 +5,12 @@ tiny plugin, allow you to generate html file
 Usage :
     
 ```js
-import HtmlPlugin from 'webpack-fullhtml-plugin';
+import FullHTMLPlugin from 'webpack-fullhtml-plugin';
 
-new HtmlPlugin({
+new FullHTMLPlugin({
   title: `example page`,
   css: ['./reset.css', './style.css'],
-  className: `example-scene`,
+  classname: `example-scene`,
   js:  ['./commons.js', './bundle.js'],
   filename: `./path/index.html`
 }); 
