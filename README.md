@@ -1,8 +1,11 @@
-## webpack-fullhtml-plugin
+# webpack-fullhtml-plugin
 
-tiny plugin, allow you to generate html file
-
-Usage :
+ - Tiny plugin,
+ - Simple usage
+ - Full custom options
+ 
+ 
+###Usage :
     
 ```js
 import FullHTMLPlugin from 'webpack-fullhtml-plugin';
@@ -16,7 +19,7 @@ new FullHTMLPlugin({
 }); 
 ```
     
-Output :
+###Output :
 
 ```html
 <!DOCTYPE html>
@@ -34,7 +37,16 @@ Output :
     </body>
 </html>
 ```
-    
+
+### Multiple Html output
+
+to have more output you just need to duplicate the instantiation of the plugin
+```js
+new FullHTMLPlugin(...options); 
+new FullHTMLPlugin(...options); 
+new FullHTMLPlugin(...options); 
+```
+
 ### Licence
 MIT
 
