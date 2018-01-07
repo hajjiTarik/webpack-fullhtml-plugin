@@ -5,7 +5,7 @@
  - Full custom options
  
  
-###Usage :
+### Usage :
     
 ```js
 import FullHTMLPlugin from 'webpack-fullhtml-plugin';
@@ -19,7 +19,7 @@ new FullHTMLPlugin({
 }); 
 ```
     
-###Output :
+### Output :
 
 ```html
 <!DOCTYPE html>
