@@ -13,7 +13,8 @@ import FullHTMLPlugin from 'webpack-fullhtml-plugin';
 new FullHTMLPlugin({
   title: `example page`,
   css: ['./reset.css', './style.css'],
-  classname: `example-scene`,
+  classNames: 'class-1 class-2',
+  htmlNodeId: 'exemple-id',
   js:  ['./commons.js', './bundle.js'],
   filename: `./path/index.html`
 }); 

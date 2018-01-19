@@ -98,7 +98,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    this.initialTemplate = function (_ref, cssHandler, jsHandler) {
 	      var title = _ref.title,
-	          classname = _ref.classname,
+	          classNames = _ref.classNames,
+	          htmlNodeId = _ref.htmlNodeId,
 	          css = _ref.css,
 	          js = _ref.js;
 
@@ -112,7 +113,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      html += '</head>\n';
 	      html += '<body>\n';
-	      html += '<div class="' + classname + '"></div>\n';
+	      html += '<div id="' + htmlNodeId + '" class="' + classNames + '"></div>\n';
 
 	      html += jsHandler(js);
 

@@ -30,7 +30,7 @@ export default class {
     return tmp;
   };
 
-  initialTemplate = ({ title, classname, css, js }, cssHandler, jsHandler) => {
+  initialTemplate = ({ title, classNames, htmlNodeId, css, js }, cssHandler, jsHandler) => {
     let html = '<!DOCTYPE html>\n';
     html += '<html>\n';
     html += '<head>\n';
@@ -41,7 +41,7 @@ export default class {
 
     html += '</head>\n';
     html += '<body>\n';
-    html += '<div class="' + classname + '"></div>\n';
+    html += '<div id="'+ htmlNodeId +'" class="' + classNames +'"></div>\n';
 
     html += jsHandler(js);
 
